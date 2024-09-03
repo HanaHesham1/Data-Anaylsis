@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: jenkins
+  description: Jenkins server integration
+  annotations:
+    jenkins.io/job-url: "http://localhost:8080/job/Test"
+spec:
+  type: service
+  lifecycle: production
+  owner: Hana
+  system: my-system
