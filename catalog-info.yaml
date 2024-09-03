@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: jenkins
-  description: Jenkins server integration
+  name: jenkins               # Name of the component in Backstage
+  description: Jenkins server integration  # Description of the component
   annotations:
-    jenkins.io/job-url: "http://localhost:8080/job/Test"
+    jenkins.io/job-url: "http://localhost:8080/job/Test"  # Jenkins job URL
 spec:
-  type: service
-  lifecycle: production
-  owner: Hana
-  system: my-system
+  type: service               # Type of the component (e.g., service, website, library)
+  lifecycle: production       # Lifecycle stage (e.g., production, development)
+  owner: Hana                 # Owner of the component (could be a team or individual)
+  system: my-system           # System this component belongs to
